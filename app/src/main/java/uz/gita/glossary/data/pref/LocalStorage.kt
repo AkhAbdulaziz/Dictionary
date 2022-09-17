@@ -2,11 +2,12 @@ package uz.gita.glossary.data.pref
 
 import android.content.Context
 import uz.gita.glossary.app.App
+import javax.inject.Inject
 
 
-class SharedPref private constructor() {
+class LocalStorage @Inject constructor() {
 
-    companion object {
+ /*   companion object {
         private lateinit var instance: SharedPref
 
         fun getSharedPref(): SharedPref {
@@ -15,7 +16,7 @@ class SharedPref private constructor() {
             }
             return instance
         }
-    }
+    }*/
 
     private val pref = App.instance.getSharedPreferences("Dictionary", Context.MODE_PRIVATE)
 

@@ -1,11 +1,10 @@
-package uz.gita.glossary.adapter
+package uz.gita.glossary.presentation.ui.adapter
 
 import android.annotation.SuppressLint
 import android.database.Cursor
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,12 +36,12 @@ class FavouritesCursorAdapter(
 
         init {
             itemView.setOnClickListener {
-                clickItemListener?.invoke(getFavouritesDataByPos(adapterPosition))
+                clickItemListener?.invoke(getFavouritesDataByPos(absoluteAdapterPosition))
             }
             remember.setOnClickListener {
-                if (adapterPosition > -1) {
-//                    val data = getFavouritesDataByPos(adapterPosition)
-                    removeFavWordListener?.invoke(getFavouritesDataByPos(adapterPosition), adapterPosition)
+                if (absoluteAdapterPosition > -1) {
+//                    val data = getFavouritesDataByPos(absoluteAdapterPosition)
+                    removeFavWordListener?.invoke(getFavouritesDataByPos(absoluteAdapterPosition), absoluteAdapterPosition)
                 }
             }
         }

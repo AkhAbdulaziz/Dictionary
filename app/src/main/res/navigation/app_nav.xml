@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.glossary.presentation.ui.screens.MainScreen"
+        android:label="MainScreen" >
+        <action
+            android:id="@+id/action_mainScreen_to_favouritesScreen"
+            app:destination="@id/favouritesScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_infoScreen"
+            app:destination="@id/infoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesScreen"
+        android:name="uz.gita.glossary.presentation.ui.screens.FavouritesScreen"
+        android:label="screen_favourites"
+        tools:layout="@layout/screen_favourites" >
+        <action
+            android:id="@+id/action_favouritesScreen_to_infoScreen"
+            app:destination="@id/infoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="uz.gita.glossary.presentation.ui.screens.InfoScreen"
+        android:label="screen_info"
+        tools:layout="@layout/screen_info" >
+        <argument
+            android:name="glossaryData"
+            app:argType="uz.gita.glossary.data.model.GlossaryData" />
+    </fragment>
+</navigation>

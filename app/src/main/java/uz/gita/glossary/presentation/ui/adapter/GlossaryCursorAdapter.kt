@@ -1,4 +1,4 @@
-package uz.gita.glossary.adapter
+package uz.gita.glossary.presentation.ui.adapter
 
 import android.annotation.SuppressLint
 import android.database.Cursor
@@ -29,6 +29,7 @@ class GlossaryCursorAdapter(
     fun setClickFavouriteListener(f: (GlossaryData, Int) -> Unit) {
         clickFavouriteListener = f
     }
+
     inner class CursorViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private var remember = itemView.findViewById<ImageView>(R.id.remember)
         private var title = itemView.findViewById<TextView>(R.id.title)
@@ -36,17 +37,18 @@ class GlossaryCursorAdapter(
 
         init {
             itemView.setOnClickListener {
-                clickItemListener?.invoke(getDictionaryDataByPos(adapterPosition))
+                clickItemListener?.invoke(getDictionaryDataByPos(absoluteAdapterPosition))
             }
             remember.setOnClickListener {
-                val data = getDictionaryDataByPos(adapterPosition)
-                clickFavouriteListener?.invoke(data, adapterPosition)
+                val data = getDictionaryDataByPos(absoluteAdapterPosition)
+                clickFavouriteListener?.invoke(data, absoluteAdapterPosition)
             }
         }
 
+        @SuppressLint("ResourceAsColor")
         fun bind(data: GlossaryData) {
             val spanSt = SpannableString(data.word)
-            val foregroundColorSpan = ForegroundColorSpan(color(R.color.purple_700))
+            val foregroundColorSpan = ForegroundColorSpan(color(R.color.green))
             val startIndex = data.word.indexOf(query, 0, true)
             val endIndex = startIndex + query.length
             spanSt.setSpan(

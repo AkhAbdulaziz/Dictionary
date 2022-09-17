@@ -20,6 +20,17 @@
         <entry key="..\:/GITA/BOOTCAMP/Android/Applications/Lesson21_DictionaryApp/Dictionary/app/src/main/res/layout/screen_glossary.xml" value="0.2" />
         <entry key="..\:/GITA/BOOTCAMP/Android/Applications/Lesson21_DictionaryApp/Dictionary/app/src/main/res/layout/screen_info.xml" value="0.2" />
         <entry key="..\:/MyApps/7. English Glossary/App/Dictionary/app/src/main/res/layout/screen_glossary.xml" value="0.1921875" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/drawable/ic_bookmark.xml" value="0.12" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/drawable/ic_bookmark_select.xml" value="0.12" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/drawable/ic_close.xml" value="0.12" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/drawable/ic_unfavourite.xml" value="0.12" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/item_favourites.xml" value="0.1921875" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/item_glossary.xml" value="0.1921875" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/screen_favourites.xml" value="0.1921875" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/screen_glossary.xml" value="0.1921875" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/screen_info.xml" value="0.2" />
+        <entry key="..\:/MyApps/7.EnglishGlossary/App/Dictionary/app/src/main/res/layout/screen_main.xml" value="0.2" />
       </map>
     </option>
   </component>
